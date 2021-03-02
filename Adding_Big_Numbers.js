@@ -8,7 +8,7 @@ function add(a, b) {
 }
 
 // EXAMPLE INPUT
-let a = '63829983432984289347293874', b = '90938498237058927340892374089';
+let a = '1', b = '1';
 
 // console.log(add(a, b));
 
