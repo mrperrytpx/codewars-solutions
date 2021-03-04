@@ -4,7 +4,7 @@
 let input = "0 tempora o mores !" // result = igPay atinlay siay oolcay
 
 // ORIGINAL SOLUTION
-/* function pigIt(str){
+function pigIt(str){
     let arr = str.split(" ");
     for (let i = 0; i < arr.length; i++) {
         if (arr[i].charAt(0) !== "!" && arr[i].charAt(0) !== "?") {
@@ -12,7 +12,7 @@ let input = "0 tempora o mores !" // result = igPay atinlay siay oolcay
         }
     }
     return arr.join(" ");
-} */
+}
 
 // REFACTORED SOLUTION
 const pigIt = str => {
