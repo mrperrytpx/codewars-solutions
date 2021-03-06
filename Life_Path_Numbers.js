@@ -4,7 +4,7 @@
 const input = "1961-07-04";
 
 // ORIGINAL SOLUTION
-/* function dateConvert(date) {
+function dateConvert(date) {
     return {
         year: date.slice(0, 4),
         month: date.slice(5, 7),
@@ -34,11 +34,8 @@ function lifePathNumber(date, arr = []) {
     }
     return arr;
 }
- */
-//console.log(lifePathNumber(input));
 
 // REFACTORED SOLUTION
-
 function convertDate(date) {
     return date = date.split("-").map(number => parseInt(number));
 }
