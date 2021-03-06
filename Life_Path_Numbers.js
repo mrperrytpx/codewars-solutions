@@ -11,11 +11,9 @@ const input = "1961-07-04";
         day: date.slice(8, 10)
     }
 }
-
 function dateSum(date) {
     return date.split("").map(number => parseInt(number)).reduce((acc, curr) => acc + curr, 0);
 }
-
 function checking(date) {
     let check = dateConvert(date);
     check.year = dateSum(check.year);
@@ -23,7 +21,6 @@ function checking(date) {
     check.day = dateSum(check.day);
     return arr = Object.keys(check).map((key) => check[key]);
 }
-
 function lifePathNumber(date, arr = []) {
     arr = checking(date);
     for (let i = 0; i < arr.length; i++) {
@@ -48,18 +45,13 @@ function convertDate(date) {
 
 function calculate(number) {
     number = number.toString().split("").map(number => parseInt(number)).reduce((acc, curr) => acc + curr, 0);
-    if (number >= 10) {
-        number = calculate(number)
-    }
-    return number;
+    return number >= 10 ? number = calculate(number) : number;
 }
 
 function lifePathNumber(date) {
     let arr = convertDate(date);
     arr = arr.map(number => calculate(number)).reduce((acc, curr) => acc + curr, 0);
-    while (arr >= 10) {
-        arr = Math.floor(arr / 10) + (arr % 10);
-    }
+    while (arr >= 10) arr = Math.floor(arr / 10) + (arr % 10);
     return arr;
 }
 
