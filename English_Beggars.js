@@ -6,13 +6,23 @@ let inputNumber = 3;
 
 //ORIGINAL SOLUTION
 function beggars(values, n) {
-    let array = [];
-    for (let i = 0; i < values.length; i++) {
-        if (i % n === 0) {
-            array.push(values[i]);
+    if (n <= 0) return [];
+    let array = [], resultArr = [], finalArr = [];
+    for (let i = 0; i < n; i++) {
+        for (let j = i; j < values.length; j += n) {
+            array.push(values[j]);
         }
     }
-    return array;
+    let step = Math.ceil(array.length / n);
+    for (let i = 0; i < array.length; i += step) {
+        resultArr.push(array.slice(i, i + step).reduce((acc, curr) => acc + curr, 0));
+    }
+    if (resultArr < n) {
+        for (let i = 0; i <= n - resultArr.length; i++) {
+            resultArr.push(0);
+        }
+    }
+    return resultArr;
 }
 
 console.log(beggars(inputArray, inputNumber));
