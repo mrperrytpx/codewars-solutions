@@ -14,3 +14,10 @@ function reverse(n){
 }
 
 console.log(reverse(input));
+
+// REFACTORED SOLUTION
+function reverse(n, rev = 0){
+    rev = (rev * 10) + (n % 10);
+    n = Math.floor(n / 10);
+    return n > 0 ? reverse(n, rev) : rev;
+}
