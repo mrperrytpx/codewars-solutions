@@ -59,4 +59,17 @@ function beggars(values, n) {
     return resultArr;
 }
 
+// No recursion copy paste // NEMAM MOZAK MATERE MI
+function beggars(values, n) {
+    let result = [];
+    for (let i = 0; i < n; i++) {
+        let sum = 0;
+        for (let j = i; j < values.length; j += n) {
+            sum += values[j];
+        }
+        result.push(sum);
+    }
+    return result
+}
+
 console.log(beggars(inputArray, inputNumber));
