@@ -40,7 +40,7 @@ function beggars(values, n) {
 function mutate(array, experArr, n, step = Math.ceil(experArr.length / n), resultArr = [], i = 0) {
     resultArr.push(array.slice(i, i + step).reduce((acc, curr) => acc + curr, 0));
     n--;
-    i = i + step;
+    i += step;
     experArr.splice(0, step);
     step = Math.ceil(experArr.length / n)
     return !step ? resultArr : mutate(array, experArr, n, step, resultArr, i);

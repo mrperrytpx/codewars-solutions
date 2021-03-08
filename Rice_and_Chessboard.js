@@ -13,6 +13,7 @@ function squaresNeeded(grains, sum = 0, n = 0, counter = 0){
         return squaresNeeded(grains, sum, n + 1, counter + 1)
     }
 }
+
 console.log(squaresNeeded(input));
 
 //REFACTORED SOLUTION
