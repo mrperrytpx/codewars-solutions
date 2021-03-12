@@ -3,7 +3,7 @@
 const input = 13 // result => [1, 7, 10];
 
 //ORIGINAL SOLUTION
-/* function digits(x) {
+function digits(x) {
     return x.toString().split("").map(num => parseInt(num) ** 2).reduce((acc, curr) => acc + curr);
 }
 
@@ -27,7 +27,7 @@ function happyNumbers(x){
     }
     resultArray = resultArray.filter(elem => elem > 0);
     return resultArray;
-} */
+}
 
 console.log(happyNumbers(input));
 
