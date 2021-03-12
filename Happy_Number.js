@@ -43,8 +43,7 @@ function square(x, arr = []) {
     }
 }
 
-function happyNumbers(x){
-    let resultArray = [];
+function happyNumbers(x, resultArray = []){
     for (let i = 1; i <= x; i++) resultArray.push(square(i));
     return resultArray.filter(elem => elem > 0);
 }
