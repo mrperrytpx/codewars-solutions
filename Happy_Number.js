@@ -1,6 +1,6 @@
 // https://www.codewars.com/kata/59d53c3039c23b404200007e/train/javascript
 // EXAMPLE INPUT
-const input = 13 // result => [1, 7, 10];
+const input = 50 // result => [1, 7, 10];
 
 //ORIGINAL SOLUTION
 function digits(x) {
@@ -33,7 +33,7 @@ console.log(happyNumbers(input));
 
 //REFACTORED SOLUTION
 function square(x, arr = []) {
-    if (x === 1) {
+    if (x === 1 && arr.length > 0) {
         return arr[0];
     } else {
         if (arr.includes(x)) return;
