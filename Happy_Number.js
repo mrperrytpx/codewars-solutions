@@ -33,14 +33,11 @@ console.log(happyNumbers(input));
 
 //REFACTORED SOLUTION
 function square(x, arr = []) {
-    if (x === 1 && arr.length > 0) {
-        return arr[0];
-    } else {
-        if (arr.includes(x)) return;
-        arr.push(x);
-        x = x.toString().split("").map(num => parseInt(num) ** 2).reduce((acc, curr) => acc + curr);
-        return square(x, arr);
-    }
+    if (x === 1 && arr.length) return arr[0];
+    if (arr.includes(x)) return;
+    arr.push(x);
+    x = x.toString().split("").map(num => parseInt(num) ** 2).reduce((acc, curr) => acc + curr);
+    return square(x, arr);
 }
 
 function happyNumbers(x, resultArray = []){
