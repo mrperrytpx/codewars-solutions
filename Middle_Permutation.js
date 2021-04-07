@@ -1,12 +1,11 @@
 // https://www.codewars.com/kata/58ad317d1541651a740000c5/train/javascript
 
 // EXAMPLE INPUT
-const input = "wfcairbxklyqnhupvmes"
+const input = "wfcairbxklyqnhupvme"
 
 // ORIGINAL SOLUTION - Why is it not ordering correctly I don't understand
 // DICTIONARY ORDER MEANS ALPHABETICALLY EACH TIME HAHAHAHHA NICE SO FUNNY :)
 // WORKS BUT INCEDIBLY SLOW FOR LONG STRINGS
-
 const permutation = string => {
     if (string.length < 2) return string;
     let resArray = [];
@@ -28,22 +27,36 @@ const middlePermutation = (string) => {
     string = string.split("").sort().join("");
     let resultArr = permutation(string);
     let res = resultArr.length % 2 === 0 ? resultArr[resultArr.length / 2 - 1] : resultArr[resultArr.length / 2 - 1];
-/*     for (let i = 0; i < resultArr.length; i++) {
-        console.log(`${i + 1} = ${resultArr[i]} - ${resultArr.length}`);
-    } */
-    // console.log(resultArr.indexOf("cxgdba"));
     return res;
 }
+//I wouldn't use this one smile
 
 console.log(middlePermutation(input));
 
+// EXPLANATION FOR FUTURE SELF
+/* wfcairbxklyqnhupvme
+pass 1
+length isn't even
+length / 2 character -> abcefhiklmnpqruvwxy = 19 / 2 = 9.5 rounds to 10, 10th char is 'm' + function run
+    run function again
+    pass 2
+    string is even length
+    sorted string is abcefhiklnpqruvwxy, middle character is 18 / 2 = 9, 9th char is 'l'
+    return 'lyxwvurqpnkihfecba' ('l' + reversed 'abcefhiklnpqruvwxy' which is 'yxwvurqpnkihfecba')
+    back to pass 1
+function returned 'lyxwvurqpnkihfecba' and we had 'm' before
+return 'mlyxwvurqpnkihfecba' ('m' + 'lyxwvurqpnkihfecba') 
+*/
+
 // Most understandable solution I **YOINKED**
 function middlePermutation(s) {
+    console.log(s)
     const sortedArr = s.split('').sort();
+    // console.log(sortedArr.join(""), s);
     if (sortedArr.length % 2 === 0) {
       return [...sortedArr.splice(sortedArr.length / 2 - 1, 1), ...sortedArr.reverse()].join('')
     }
     else {
       return [...sortedArr.splice(sortedArr.length / 2 , 1), middlePermutation(sortedArr.join(''))].join('')
     }
-  }
+}
