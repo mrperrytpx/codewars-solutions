@@ -50,9 +50,7 @@ return 'mlyxwvurqpnkihfecba' ('m' + 'lyxwvurqpnkihfecba')
 
 // Most understandable solution I **YOINKED**
 function middlePermutation(s) {
-    console.log(s)
     const sortedArr = s.split('').sort();
-    // console.log(sortedArr.join(""), s);
     if (sortedArr.length % 2 === 0) {
       return [...sortedArr.splice(sortedArr.length / 2 - 1, 1), ...sortedArr.reverse()].join('')
     }
