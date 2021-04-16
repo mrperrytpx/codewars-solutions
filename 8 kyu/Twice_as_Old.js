@@ -1,7 +1,7 @@
 // https://www.codewars.com/kata/5b853229cfde412a470000d0/
 
 // EXAMPLE INPUT
-let input1 = 55, input2 = 30 // result -> 22
+let input1 = 55, input2 = 30 // result -> 5
 
 // SOLUTION
 const twiceAsOld = (dadYearsOld, sonYearsOld) => {
