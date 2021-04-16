@@ -1,4 +1,4 @@
-// https://www.codewars.com/kata/525f4206b73515bffb000b21/train/javascript
+// https://www.codewars.com/kata/525f4206b73515bffb000b21
 // ORIGINAL SOLUTION
 function add(a, b) {
     let first = BigInt(a);

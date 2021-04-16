@@ -1,4 +1,4 @@
-// https://www.codewars.com/kata/58ad317d1541651a740000c5/train/javascript
+// https://www.codewars.com/kata/58ad317d1541651a740000c5
 
 // EXAMPLE INPUT
 const input = "wfcairbxklyqnhupvme"

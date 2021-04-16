@@ -1,4 +1,4 @@
-// https://www.codewars.com/kata/57f22b0f1b5432ff09001cab/train/javascript
+// https://www.codewars.com/kata/57f22b0f1b5432ff09001cab
 
 // EXAMPLE INPUT
 const input = [['bad', 'bAd', 'bad'], ['bad', 'bAd', 'bad'], ['bad', 'bAd', 'bad']];

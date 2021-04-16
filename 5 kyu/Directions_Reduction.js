@@ -1,4 +1,4 @@
-// https://www.codewars.com/kata/550f22f4d758534c1100025a/train/javascript
+// https://www.codewars.com/kata/550f22f4d758534c1100025a/
 //ORIGINAL SOLUTION
 function dirReduc(arr){
     let newArr = [...arr];

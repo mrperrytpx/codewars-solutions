@@ -1,4 +1,4 @@
-// https://www.codewars.com/kata/55de9c184bb732a87f000055/train/javascript
+// https://www.codewars.com/kata/55de9c184bb732a87f000055/
 // EXAMPLE INPUT
 let input = ['hello','world','how','are','you','?']; // result -> ['?','you','are','how','world','hello']
 

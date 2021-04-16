@@ -1,4 +1,4 @@
-// https://www.codewars.com/kata/5b0d67c1cb35dfa10b0022c7/train/javascript
+// https://www.codewars.com/kata/5b0d67c1cb35dfa10b0022c7/
 
 // EXAMPLE INPUT
 const input = 4 // result = 2, 4 -> result = 3, 16 -> result = 5 (2^n+1)

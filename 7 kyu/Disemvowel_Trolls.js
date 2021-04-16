@@ -1,4 +1,4 @@
-// https://www.codewars.com/kata/52fba66badcd10859f00097e/train/javascript
+// https://www.codewars.com/kata/52fba66badcd10859f00097e/
 
 // EXAMPLE INPOUT
 let input = "N ffns bt,\nYur wrtng s mng th wrst \'v vr rad" // result -> "'N ffns bt,\nYr wrtng s mng th wrst \'v vr rd'"

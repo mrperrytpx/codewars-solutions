@@ -1,4 +1,4 @@
-// https://www.codewars.com/kata/563b662a59afc2b5120000c6/train/javascript
+// https://www.codewars.com/kata/563b662a59afc2b5120000c6/
 // ORIGINAL SOLUTION
 function nbYear(p0, percent, aug, p, counter = 0) {
     let newSum = Math.floor(p0 + (p0 * (percent / 100)) + aug);

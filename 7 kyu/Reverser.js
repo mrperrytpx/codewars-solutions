@@ -1,4 +1,4 @@
-// https://www.codewars.com/kata/58069e4cf3c13ef3a6000168/train/javascript
+// https://www.codewars.com/kata/58069e4cf3c13ef3a6000168/
 
 // EXAMPLE INPUT 
 const input = 1234; // result = 4321

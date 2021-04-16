@@ -1,4 +1,4 @@
-// https://www.codewars.com/kata/520b9d2ad5c005041100000f/train/javascript
+// https://www.codewars.com/kata/520b9d2ad5c005041100000f/
 // EXAMPLE INPUT
 
 let input = "0 tempora o mores !" // result = igPay atinlay siay oolcay

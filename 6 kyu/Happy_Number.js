@@ -1,4 +1,4 @@
-// https://www.codewars.com/kata/59d53c3039c23b404200007e/train/javascript
+// https://www.codewars.com/kata/59d53c3039c23b404200007e/
 // EXAMPLE INPUT
 const input = 50 // result => [1, 7, 10];
 

@@ -1,4 +1,4 @@
-// https://www.codewars.com/kata/57f759bb664021a30300007d/train/javascript
+// https://www.codewars.com/kata/57f759bb664021a30300007d/
 
 // EXAMPLE INPUT
 let input = "aabacbaa" // reulst -> 'bbabcabb'
