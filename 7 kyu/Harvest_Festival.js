@@ -5,14 +5,14 @@ const seed = "@", water = 3, fert = 3, temp = 25;
 // result -> "---@@@---@@@---@@@"   
 
 // ORIGINAL SOLUTION
-/* function plant(seed, water, fert, temp){
+function plant(seed, water, fert, temp){
     let stem = "-";
     if (temp < 20 || temp > 30) {
        return `${stem.repeat(water ** 2)}${seed}`
     }
     let flower = `${stem.repeat(water)}${seed.repeat(fert)}`
     return flower.repeat(water);
-} */
+}
 
 console.log(plant(seed, water, fert, temp));
 
