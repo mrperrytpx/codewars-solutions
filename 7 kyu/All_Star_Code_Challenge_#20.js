@@ -14,3 +14,9 @@ function addArrays(array1, array2) {
 }
 
 console.log(addArrays(input1, input2));
+
+// REFACTORED
+const addArrays = (array1, array2) => {
+    if (array1.length !== array2.length) throw new Error("Error");
+    return array1.map((num, index) => array1[index] + array2[index]);
+}
