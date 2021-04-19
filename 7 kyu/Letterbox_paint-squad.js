@@ -29,8 +29,7 @@ console.log(paintLettetboxes(input1, input2));
 const paintLetterboxes = (start, end) => {
     let array = [];
     for (let i = start; i <= end; i++) array.push(i);
-
     let result = [];
-    for (let i = 0; i < 10; i++) result.push((newArr.match(new RegExp(`${i}`, "g")) || []).length)
+    for (let i = 0; i < 10; i++) result.push((array.join("").match(new RegExp(`${i}`, "g")) || []).length)
     return result;
 }
