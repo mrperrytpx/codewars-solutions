@@ -15,23 +15,22 @@ const chunkArray = (array) => {
     let indexes = getAllIndexes(array, 0);
     for (let i = 0; i < array.length; i++) {
         const first = indexes.shift();
-        const chunk = array.slice(i, first + 1).sort((a, b) => a - b).filter(num => num !== 0).concat(0);
+        const chunk = array.slice(i, first).sort((a, b) => a - b).concat(0);
         resultArray.push(chunk);
         i = first;
     }
     return resultArray;
 }
 
-const sum = array => array.reduce((acc, curr) => acc + curr, 0)
+const sum = (array) => array.reduce((acc, curr) => acc + curr, 0)
 
 const sortSequence = (sequence) => {
     const chunkedArray = chunkArray(sequence);
-
-    let len = chunkedArray.length;
+  
     let swapped;
     do {
         swapped = false;
-        for (let i = 0; i < len - 1; i++) {
+        for (let i = 0; i < chunkedArray.length - 1; i++) {
             if (sum(chunkedArray[i]) > sum(chunkedArray[i + 1])) {
                 let tmp = chunkedArray[i];
                 chunkedArray[i] = chunkedArray[i + 1];
