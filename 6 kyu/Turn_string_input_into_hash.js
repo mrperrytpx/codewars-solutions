@@ -7,13 +7,11 @@ function strToHash(str) {
     let split = str.split(",")
     for (let i = 0; i < split.length; i++) {
         split[i] = split[i].trim();
-        const [key, val] = item.split("=");
-        console.log(key, val);
+        split[i] = split[i].split("=");
     }
     let result = {};
     for (let i = 0; i < split.length; i++) {
         for (let j = 0; j < split[i].length - 1; j++) {
-            console.log(split[i][j], split[i][j + 1])
             result[split[i][j]] = +(split[i][j + 1]);
         }
     }
@@ -21,4 +19,17 @@ function strToHash(str) {
     return result;
 }
 
-// REFACTORED
+
+// REFACTORED 
+
+function strToHash(str) {
+    let split = str.split(",")
+    for (let i = 0; i < split.length; i++) {
+        split[i] = split[i].trim().split("=");
+    }
+    let result = {};
+    for (let i = 0; i < split.length; i++) {
+        result[split[i][0]] = +(split[i][1]);
+    }
+    return result;
+}
