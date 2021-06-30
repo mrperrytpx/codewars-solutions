@@ -23,6 +23,7 @@ function strToHash(str) {
 // REFACTORED 
 
 function strToHash(str) {
+    if (!str) return {}
     let split = str.split(",")
     for (let i = 0; i < split.length; i++) {
         split[i] = split[i].trim().split("=");
