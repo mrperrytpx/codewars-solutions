@@ -1,6 +1,6 @@
 // https://www.codewars.com/kata/550f22f4d758534c1100025a/
 //ORIGINAL SOLUTION
-function dirReduc(arr){
+function dirReduc(arr) {
     let newArr = [...arr];
     for (let i = 0; i < newArr.length; i++) {
         if (newArr[i] === "NORTH") {
@@ -17,7 +17,7 @@ function dirReduc(arr){
         }
     }
     for (let i = 0; i < newArr.length - 1; i++) {
-        if (newArr[i] + newArr[i + 1] === 0 ) {
+        if (newArr[i] + newArr[i + 1] === 0) {
             newArr.splice(i, 2);
             i -= 2;
         }
@@ -48,13 +48,13 @@ let directions = ["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"];
 function dirReduce(arr) {
     let newArr = [...arr];
     for (let i = 0; i < newArr.length; i++) {
-        if (newArr[i] === "NORTH") newArr[i] = 1; 
-        if (newArr[i] === "SOUTH") newArr[i] = -1;    
+        if (newArr[i] === "NORTH") newArr[i] = 1;
+        if (newArr[i] === "SOUTH") newArr[i] = -1;
         if (newArr[i] === "WEST") newArr[i] = 2;
         if (newArr[i] === "EAST") newArr[i] = -2;
     }
     for (let i = 0; i < newArr.length - 1; i++) {
-        if (newArr[i] + newArr[i + 1] === 0 ) {
+        if (newArr[i] + newArr[i + 1] === 0) {
             newArr.splice(i, 2);
             i -= 2;
         }
