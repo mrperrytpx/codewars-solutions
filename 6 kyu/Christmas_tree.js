@@ -2,7 +2,7 @@
 
 // EXAMPLE INPUT
 const input = 5
-// result 
+// result ->
 //     *    
 //    ***   
 //   *****  
@@ -18,4 +18,6 @@ function christmasTree(height) {
     return tree.join("\n");
 }
 
-console.log(christmasTree(5));
+console.log(christmasTree(input));
+
+console.log("codewar".includes("wars"))

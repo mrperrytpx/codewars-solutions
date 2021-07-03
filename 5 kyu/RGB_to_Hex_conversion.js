@@ -1,7 +1,7 @@
 // https://www.codewars.com/kata/513e08acc600c94f01000001
 
 // EXAMPLE INPUT
-const input1 = 105, input2 = 14, input3 = 208 // result "690ED0"
+const input1 = 105, input2 = 14, input3 = 208 // result => "690ED0"
 
 // ORIGINAL SOLUTION
 function rgb(r, g, b) {

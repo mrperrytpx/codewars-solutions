@@ -2,7 +2,7 @@
 
 // EXAMPLE INPUT
 const input = "444996, 699990, 666690, 096904, 600644, 640646, 606469, 409694, 666094, 606490";
-// result 2.9259259259e+1
+// result => 2.9259259259e+1
 
 //SOLUTION
 function posAverage(s) {
