@@ -1,7 +1,7 @@
 // https://www.codewars.com/kata/5208f99aee097e6552000148
 
 // EXAMPLE INPUT
-const input = "camelCase" // result => camelCase
+const input = "camelCase" // result => camel Case
 
 // ORIGINAL SOLUTION
 function solution(string) {
