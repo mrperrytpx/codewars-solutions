@@ -2,23 +2,23 @@
 
 // EXAMPLE INPUT
 const input1 = 'a #b\nc\nd $e f g', input2 = ['#', '$']
-// result => "apples, plums\npears\noranges"
+// result => "a\nc\nd"
 
 // ORIGINAL SOLUTION
-// function solution(input, markers) {
-//     let arr = input.split("\n")
-//     for (let i = 0; i < arr.length; i++) {
-//         if (arr[i].length > 1) arr[i] = arr[i].split(" ");
-//         for (let m = 0; m < markers.length; m++) {
-//             for (let j = 0; j < arr[i].length; j++) {
-//                 if (arr[i][j].includes(markers[m])) {
-//                     arr[i].splice(j, arr[i].length)
-//                 }
-//             }
-//         };
-//     }
-//     return arr.reduce((acc, curr) => acc.concat(curr.length > 1 ? curr.join(" ") : curr), []).join("\n")
-// }
+function solution(input, markers) {
+    let arr = input.split("\n")
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].length > 1) arr[i] = arr[i].split(" ");
+        for (let m = 0; m < markers.length; m++) {
+            for (let j = 0; j < arr[i].length; j++) {
+                if (arr[i][j].includes(markers[m])) {
+                    arr[i].splice(j, arr[i].length)
+                }
+            }
+        };
+    }
+    return arr.reduce((acc, curr) => acc.concat(curr.length > 1 ? curr.join(" ") : curr), []).join("\n")
+}
 
 // REFACTORED SOLUTION
 const solution = (input, markers) => {
